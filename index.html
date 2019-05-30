@@ -1,123 +1,112 @@
----
-layout: default
----
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+  --card-width: 355px;
+  --card-height: 200px;
 }
-```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+html, body {
+  margin:0px;
+  padding:0px;
+}
 
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+.grid-container {
+  display: grid;
+  grid-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(auto,var(--card-width)));
+  grid-auto-rows: var(--card-height);
+  margin-top: 70px;
+}
+.grid-item {
+  border: 1px solid Gainsboro;
+  border-radius: 4px;
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-timing-function: ease;
+  background-size:cover;
+  background-position-y: top;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+.grid-item:hover {
+  box-shadow: 0 0 8px 1px rgba(0,0,0,.1);
+  position: relative; 
+  background-position-y: bottom;
+}
+.header {
+  padding-left: 30px;
+  background-color: White;
+  position: fixed;
+  top:0px; 
+  width: 100%; 
+  height: 70px;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,.1);
+  z-index: 1; /* ensures the header stays above the grid items when hovering */
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #267CB9;
+}
+a:visited {
+  color: none;
+}
+</style>
+</head>
 
 
-### Definition lists can be used with HTML syntax.
+<body>
+<div class="header">
+  <h1>
+    <a href="https://ellwise.github.io">
+      Elliott Wise
+    </a>
+  </h1>
+</div>
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+<div class=grid-container style="overflow:hidden">
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+  <a href="https://commons.wikimedia.org/wiki/Category:Illustrations_of_typical_specimens_of_Lepidoptera_Heterocera_in_the_collection_of_the_British_Museum#/media/File:Illustrations_of_typical_specimens_of_Lepidoptera_Heterocera_in_the_collection_of_the_British_Museum_(Pl._XLIII)_(8726506752).jpg">
+    <div class=grid-item style="background-image:url(./img/Illustrations_moth.jpg);">
+      Sound absorption in moth wings
+    </div>
+  </a>
 
-```
-The final element.
-```
+  <div class=grid-item style="background-image:url(./img/corrosion_patch.png)">
+    Corrosion of metal pipes
+  </div>
+  <div class=grid-item style="background-image:url(./img/Offgrid_source.png)">
+    Embedding source terms in simulations
+  </div>
+  <div class=grid-item style="background-image:url(./img/Shock_wave_mesh.png)">
+    Adapting computational meshes to shock waves
+  </div>
+  <div class=grid-item style="background-image:url(./img/AfterEllen.jpg)">
+    What happened to AfterEllen.com?
+  </div>
+  <div class=grid-item style="background-image:url(./img/ion_thruster_sputtering.gif)">
+    Erosion of ion thruster grids
+  </div>
+  <div class=grid-item style="background-image:url(./img/fibre_diagram.png);">
+      Compressing individual carbon fibres
+  </div>
+  <div class=grid-item style="background-image:url(./img/BLf_protein.png)">
+      Extracting lactoferrin from milk whey
+  </div>
+  <div class=grid-item style="background-image:url(./img/axisymmetric_ultrasound.png);">
+      Axisymmetric ultrasound simulation
+  </div>
+</div>
+
+</body>
+</html>
