@@ -12,6 +12,50 @@ html, body {
   padding:0px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 120px auto; /* 70 to clear header, 50 to pass card */
+  padding: 30px; /* padding around popup content */
+  background: white;
+  border-radius: 4px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: all 0.5s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup .close:hover {
+  color: Gainsboro;
+}
+.popup .content {
+  margin-top: 30px;
+  height: 30%;
+  overflow: auto;
+}
+
 .grid-container {
   display: grid;
   grid-gap: 30px;
@@ -23,6 +67,7 @@ html, body {
   grid-auto-rows: var(--card-height);
   margin-top: 70px;
 }
+
 .grid-item {
   border: 1px solid Gainsboro;
   border-radius: 4px;
@@ -43,6 +88,7 @@ html, body {
   position: relative; 
   background-position-y: bottom;
 }
+
 .header {
   padding-left: 30px;
   background-color: White;
@@ -54,6 +100,7 @@ html, body {
   z-index: 1; /* ensures the header stays above the grid items when hovering */
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 a {
   text-decoration: none;
   color: #267CB9;
@@ -82,12 +129,25 @@ a:visited {
     </div>
   </a>
   
+  
   <div class=grid-item>
-    Spotting cracks in topological reconstructions
+	  Spotting cracks in topological reconstructions
   </div>
-  <div class=grid-item style="background-image:url(./img/corrosion_patch.png)">
-    Measuring corrosion in metal pipes
+  
+  <a class="button" href="#popup1">	 
+    <div class=grid-item style="background-image:url(./img/corrosion_patch.png)">
+      Measuring corrosion in metal pipes
+    </div>
+  </a>
+  <div id="popup1" class="overlay">
+	<div class="popup">
+	  <a class="close" href="#">&times;</a>
+	  <p class="content">
+		This is dummy text where the project description would go.
+	  </p>
+	</div>
   </div>
+  
   <div class=grid-item style="background-image:url(./img/Offgrid_source.png)">
     Embedding sources in ultrasound simulations
   </div>
