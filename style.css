@@ -1,0 +1,106 @@
+:root {
+  --card-width: 355px;
+  --card-height: 200px;
+}
+
+html, body {
+  margin:0px;
+  padding:0px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 120px auto; /* 70 to clear header, 50 to pass card */
+  padding: 30px; /* padding around popup content */
+  background: white;
+  border-radius: 4px;
+  width: 30%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: all 0.5s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup .close:hover {
+  color: Gainsboro;
+}
+.popup .content {
+  margin-top: 30px;
+  height: 30%;
+  overflow: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(auto,var(--card-width)));
+  grid-auto-rows: var(--card-height);
+  margin-top: 70px;
+}
+
+.grid-item {
+  border: 1px solid Gainsboro;
+  border-radius: 4px;
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-timing-function: ease;
+  background-size:cover;
+  background-position-y: top;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+.grid-item:hover {
+  box-shadow: 0 0 8px 1px rgba(0,0,0,.1);
+  position: relative; 
+  background-position-y: bottom;
+}
+
+.header {
+  padding-left: 30px;
+  background-color: White;
+  position: fixed;
+  top:0px; 
+  width: 100%; 
+  height: 70px;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,.1);
+  z-index: 1; /* ensures the header stays above the grid items when hovering */
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #267CB9;
+}
+a:visited {
+  color: none;
+}
