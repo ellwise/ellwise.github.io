@@ -6,6 +6,7 @@
 html, body {
   margin:0px;
   padding:0px;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .overlay {
@@ -24,33 +25,61 @@ html, body {
   opacity: 1;
 }
 
+/*@media (orientation: landscape) {
+  .popup {
+    
+  }
+}
+
+@media (orientation: portrait) {
+  .popup {
+    max-width: var(--card-width);
+    min-width: 70%;
+  }
+  html {
+    text-size-adjust: 150%;
+  }
+}*/
+
 .popup {
+  width: calc(2 * var(--card-width));
+  max-width: 90%;
   margin: 120px auto; /* 70 to clear header, 50 to pass card */
   padding: 30px; /* padding around popup content */
   background: white;
   border-radius: 4px;
-  width: 30%;
   position: relative;
   transition: all 0.5s ease-in-out;
+  overflow:auto;
+  text-align:justify;
+  text
+}
+.popup img {
+  width:30%;
+  float:right;
+  padding-left:30px;
 }
 .popup .close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+  position: relative;
+  margin-left: 30px; /* give space with surrounding text content */
+  margin-bottom: 30px;
+  top: 0;
+  right: 0;
   transition: all 0.5s;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color: black;
+  float:right;
 }
 .popup .close:hover {
   color: Gainsboro;
 }
-.popup .content {
+/*.popup .content {
   margin-top: 30px;
   height: 30%;
   overflow: auto;
-}
+}*/
 
 .grid-container {
   display: grid;
@@ -62,6 +91,7 @@ html, body {
   grid-template-columns: repeat(auto-fill, minmax(auto,var(--card-width)));
   grid-auto-rows: var(--card-height);
   margin-top: 70px;
+  overflow:hidden;
 }
 
 .grid-item {
@@ -71,11 +101,11 @@ html, body {
   transition-duration: 0.5s;
   transition-property: all;
   transition-timing-function: ease;
+  /* this expects a style="background-image:..." to be set in html */
   background-size:cover;
   background-position-y: top;
   width: 100%;
   height: 100%;
-  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
@@ -94,7 +124,6 @@ html, body {
   height: 70px;
   box-shadow: 0 0 8px 1px rgba(0,0,0,.1);
   z-index: 1; /* ensures the header stays above the grid items when hovering */
-  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
