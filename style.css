@@ -26,19 +26,6 @@ html, body {
 }
 
 /*@media (orientation: landscape) {
-  .popup {
-    
-  }
-}
-
-@media (orientation: portrait) {
-  .popup {
-    max-width: var(--card-width);
-    min-width: 70%;
-  }
-  html {
-    text-size-adjust: 150%;
-  }
 }*/
 
 .popup {
@@ -51,8 +38,9 @@ html, body {
   position: relative;
   transition: all 0.5s ease-in-out;
   overflow:auto;
+}
+.popup p {
   text-align:justify;
-  text
 }
 .popup img {
   width:30%;
@@ -62,7 +50,6 @@ html, body {
 .popup .close {
   position: relative;
   margin-left: 30px; /* give space with surrounding text content */
-  margin-bottom: 30px;
   top: 0;
   right: 0;
   transition: all 0.5s;
@@ -97,7 +84,8 @@ html, body {
 .grid-item {
   border: 1px solid Gainsboro;
   border-radius: 4px;
-  transition-delay: 0s;
+  transition: all 0.5s ease-in-out;
+  /*transition-delay: 0s;
   transition-duration: 0.5s;
   transition-property: all;
   transition-timing-function: ease;
