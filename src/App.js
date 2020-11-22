@@ -88,6 +88,7 @@ class App extends Component {
           <Nav>
             <Nav.Link href="./assets/Wise_CV_historical.pdf">Curriculum Vitae</Nav.Link>
             <Nav.Link href="https://github.com/ellwise/">GitHub Profile</Nav.Link>
+            <Nav.Link href="https://scholar.google.co.uk/citations?user=5LE79rcAAAAJ&hl=en">Google Scholar</Nav.Link>
             <Nav.Link href="http://maps.ellwise.com">Custom Metro Map</Nav.Link>
           </Nav>
         </Navbar>
