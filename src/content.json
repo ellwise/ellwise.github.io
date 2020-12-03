@@ -5,7 +5,6 @@
   ],
   "projects":[
     {
-      "id": 1,
       "title": "Understanding sound absorption in moth wings",
       "image": "./assets/noun_Moth_1026145.png",
       "caption": "Moth by parkjisun from the Noun Project",
@@ -15,7 +14,6 @@
       ]
     },
     {
-      "id": 2,
       "title": "Spotting cracks in pipes with deep learning",
       "image": "./assets/noun_Neural Network_873053.png",
       "caption": "Neural Network by Knut M. Synstad from the Noun Project",
@@ -25,7 +23,6 @@
       ]
     },
     {
-      "id": 3,
       "title": "Measuring corrosion damage in metal pipes",
       "image": "./assets/corrosion_patch.png",
       "description": [
@@ -34,7 +31,6 @@
       ]
     },
     {
-      "id": 4,
       "title": "Embedding sources in ultrasound simulations",
       "image": "./assets/Offgrid_source.png",
       "description": [
@@ -42,7 +38,6 @@
       ]
     },
     {
-      "id": 5,
       "title": "Adapting computational meshes to shock waves",
       "image": "./assets/Shock_wave_mesh.png",
       "description": [
@@ -50,7 +45,6 @@
       ]
     },
     {
-      "id": 6,
       "title": "What happened to AfterEllen.com?",
       "image": "./assets/AfterEllen.jpg",
       "description":[
@@ -58,7 +52,6 @@
       ]
     },
     {
-      "id": 7,
       "title": "Predicting erosion of ion thruster grids",
       "image": "./assets/ion_thruster_sputtering.gif",
       "description": [
@@ -67,7 +60,6 @@
       ]
     },
     {
-      "id": 8,
       "title": "Compressing individual carbon fibres",
       "image": "./assets/fibre_diagram.png",
       "description": [
@@ -76,7 +68,6 @@
       ]
     },
     {
-      "id": 9,
       "title": "Extracting lactoferrin from milk whey",
       "image": "./assets/BLf_protein.png",
       "description": [
@@ -85,7 +76,6 @@
       ]
     },
     {
-      "id": 10,
       "title": "Axisymmetric ultrasound simulation",
       "image": "./assets/axisymmetric_ultrasound.png",
       "description": [
@@ -94,7 +84,6 @@
       ]
     },
     {
-      "id": 11,
       "title": "Watershed modelling in data-sparse regions",
       "image": "./assets/noun_creek_22410.png",
       "caption": "creek by Dan Hetteix from the Noun Project",
