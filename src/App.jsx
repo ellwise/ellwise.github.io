@@ -65,17 +65,21 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar sticky="top" bg="light">
+        <Navbar sticky="top" bg="light" expand="md">
           <Navbar.Brand>Elliott Wise, PhD</Navbar.Brand>
-          <Nav>
-            <Nav.Link onClick={() => this.handleShow(-1)}>
-              Curriculum Vitae
-            </Nav.Link>
-            {this.renderCV()}
-            <Nav.Link href="https://github.com/ellwise/">GitHub Profile</Nav.Link>
-            <Nav.Link href="https://scholar.google.co.uk/citations?user=5LE79rcAAAAJ&hl=en">Google Scholar</Nav.Link>
-            <Nav.Link href="http://maps.ellwise.com">Custom Metro Map</Nav.Link>
-          </Nav>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav>
+              <Nav.Link onClick={() => this.handleShow(-1)}>
+                Curriculum Vitae
+              </Nav.Link>
+              {this.renderCV()}
+              <Nav.Link href="https://github.com/ellwise/">GitHub Profile</Nav.Link>
+              <Nav.Link href="https://scholar.google.co.uk/citations?user=5LE79rcAAAAJ&hl=en">Google Scholar</Nav.Link>
+              <Nav.Link href="http://maps.ellwise.com">Custom Metro Map</Nav.Link>
+              <Nav.Link href="https://breaducation.ellwise.com">Bread Recipe Calculator</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
         <Container>
           <Row className="mt-4">
