@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Link, Switch, Route } from 'react-router-dom';
 //import { Modal, Grid, Col, Row, Button } from 'react-bootstrap'
 
 import ProjectCard from './ProjectCard';
@@ -53,7 +54,14 @@ class App extends Component {
     return (
       <Modal size="lg" show={this.state.show===-1} onHide={this.handleClose}>
         <Modal.Header closeButton closeLabel="close window">
-          <a href="./assets/Wise_CV_historical.pdf" download>Download as PDF</a>
+          <div>
+            <a href="./assets/Wise_CV_historical.pdf" download style={{ display: "block" }}>
+              Download as PDF
+            </a>
+            <Link to="/CV" target="_blank" style={{ display: "block" }}>
+              Open in new tab
+            </Link>
+          </div>
         </Modal.Header>
         <Modal.Body>
           <CV/>
@@ -64,34 +72,47 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar sticky="top" bg="light" expand="md">
-          <Navbar.Brand>Elliott Wise, PhD</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
-              <Nav.Link onClick={() => this.handleShow(-1)}>
-                Curriculum Vitae
-              </Nav.Link>
-              {this.renderCV()}
-              <Nav.Link href="https://github.com/ellwise/">GitHub Profile</Nav.Link>
-              <Nav.Link href="https://scholar.google.co.uk/citations?user=5LE79rcAAAAJ&hl=en">Google Scholar</Nav.Link>
-              <Nav.Link href="http://maps.ellwise.com">Custom Metro Map</Nav.Link>
-              <Nav.Link href="https://breaducation.ellwise.com">Bread Recipe Calculator</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-        <Container>
-          <Row className="mt-4">
-            <Col>
-              {bio.map((p) => <p>{p}</p>)}
-            </Col>
-          </Row>
-          <Row>
-            {this.renderProjects()}
-          </Row>
-        </Container>
-      </div>
+      <Switch>
+        <Route exact path="/" render={() => (
+          <div>
+            <Navbar sticky="top" bg="light" expand="md">
+              <Navbar.Brand>Elliott Wise, PhD</Navbar.Brand>
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav>
+                  <Nav.Link onClick={() => this.handleShow(-1)}>
+                    Curriculum Vitae
+                  </Nav.Link>
+                  {this.renderCV()}
+                  <Nav.Link href="https://github.com/ellwise/">GitHub Profile</Nav.Link>
+                  <Nav.Link href="https://scholar.google.co.uk/citations?user=5LE79rcAAAAJ&hl=en">Google Scholar</Nav.Link>
+                  <Nav.Link href="http://maps.ellwise.com">Custom Metro Map</Nav.Link>
+                  <Nav.Link href="https://breaducation.ellwise.com">Bread Recipe Calculator</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+            <Container>
+              <Row className="mt-4">
+                <Col>
+                  {bio.map((p) => <p>{p}</p>)}
+                </Col>
+              </Row>
+              <Row>
+                {this.renderProjects()}
+              </Row>
+            </Container>
+          </div>
+        )}/>
+        <Route path="/CV" render={() => (
+          <Container>
+            <Row className="mt-4">
+              <Col>
+                <CV/>
+              </Col>
+            </Row>
+          </Container>
+        )}/>
+      </Switch>
     );
   }
 }
