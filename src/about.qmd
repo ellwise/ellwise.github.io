@@ -1,7 +1,5 @@
 ---
-format:
-    html: default
-    pdf: default
+format: html
 about:
   template: marquee
 ---
