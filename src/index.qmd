@@ -1,0 +1,14 @@
+---
+title: Projects
+listing:
+    contents: "projects/*.qmd"
+    date-format: "YYYY"
+    fields: [image, date, title]
+    image-align: left
+    sort: "filename desc"
+    type: grid
+---
+
+I'm a data science consultant - based in London and currently working for Gutteridge, Haskins & Davey (GHD) on asset management and engineering infrastructure projects. I'm passionate about exploring the frontiers of mathematics, modelling, and simulation, and proud of my history tackling difficult challenges in science and engineering.
+
+The pages linked below give some insight into that history. They describe the research projects I conducted while at the CSIRO in Australia, during my PhD at UCL, and most recently at Imperial College. The links to the left lead to my Resume, GitHub profile, and Google Scholar page.
