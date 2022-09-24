@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: ../docs
+  output-dir: ../_rendered
 
 website:
   title: "Elliott Wise, PhD"
@@ -8,8 +8,7 @@ website:
     background: primary
     contents:
       - index.qmd
-      - href: about.qmd
-        text: About
+      - projects.qmd
       - href: wise-cv.qmd
         text: Download CV
       - href: https://github.com/ellwise/

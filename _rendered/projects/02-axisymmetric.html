@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Elliott Wise, PhD - Understanding sound absorption in moth wings</title>
+<title>Elliott Wise, PhD - Axisymmetric ultrasound simulation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Understanding sound absorption in moth wings</h1>
+      <h1 class="quarto-secondary-nav-title">Axisymmetric ultrasound simulation</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -89,12 +89,12 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">Projects</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">About Me</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">About</a>
+  <a href="../projects.html" class="sidebar-item-text sidebar-link">Research Projects</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Understanding sound absorption in moth wings</h1>
+<h1 class="title d-none d-lg-block">Axisymmetric ultrasound simulation</h1>
 </div>
 
 
@@ -138,16 +138,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>To defend against predation by echolocating bats, moths have evolved acoustically absorbant wings. These are highly broadband and omnidirectional, as well as thinner and lighter than human-made technologies. It is hypothesised that this performance can be explained by the structure of the moth’s scales and hairs. These may form a ‘metamaterial’ surface, whose sub-wavelength resonant structure slows down the propagation of sound and allows the material more time to absorb the incoming wave.</p>
+<p>Ultrasound plays an important role in medicine, with uses including imaging, drug delivery, and cancer therapy. This last application works by focussing high-power ultrasound waves onto a tumour, causing highly localised heating. Simulations are used to ensure that the sound waves focus as intended, and to determine the appropriate level of power that is applied. However, the high frequencies involved can make simulation prohibitively computationally expensive.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="noun_Moth_1026145.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Moth by parkjisun from the Noun Project</figcaption><p></p>
-</figure>
-</div>
-</div></div><p>This project aimed to understand the metamaterial properties of moth wings through exploratory simulations. The finite-element method was used to model both traditional metasurfaces (composed of sub-wavelength Helmholtz-resonators), and moth wings. It is hoped that insights from the modelled acoustical phenomena can be used to design better human-made sound absorbers.</p>
+<p><img src="axisymmetric_ultrasound.png" class="img-fluid"></p>
+</div></div><p>One way of mitigating these expenses is to exploit symmetry. Often, the ultrasound transducers are shaped like spherical bowls. The sound waves then have the same symmetry, and this can be exploited in the simulation, reducing a three-dimensional problem down to two-dimensions. To do so, discrete sine and cosine transforms are used. These represent the acoustic field in a using functions with certain symmetry properties.This brings computational costs down dramatically.</p>
 
 
 

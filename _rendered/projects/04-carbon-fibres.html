@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Elliott Wise, PhD - Embedding sources in ultrasound simulations</title>
+<title>Elliott Wise, PhD - Compressing individual carbon fibres</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Embedding sources in ultrasound simulations</h1>
+      <h1 class="quarto-secondary-nav-title">Compressing individual carbon fibres</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -89,12 +89,12 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">Projects</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">About Me</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">About</a>
+  <a href="../projects.html" class="sidebar-item-text sidebar-link">Research Projects</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Embedding sources in ultrasound simulations</h1>
+<h1 class="title d-none d-lg-block">Compressing individual carbon fibres</h1>
 </div>
 
 
@@ -138,14 +138,15 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>To simulate ultrasound waves, regular computational grids are often used. This is effectively like storing an video as pixels, with each pixel giving the acoustic field at a given point in space and time. However, acoustic sources often don’t lend themselves well to pixellation. For instance, the edges of a bowl-shaped transducer become staircased when represented on a grid. To combat this, I developed a technique for accurately representing a single point source at a location that is not aligned with the grid. This works by spreading the point source across many nearby pixels in an optimal manner. Arbitrary source distributions can then be accurately represented as collections of off-grid point sources.</p>
-
-
-
+<p>Carbon fibre composites are widely used in the aerospace industry. These consist of a woven mat of fibres embedded in a resin. Their chief benefit over traditional materials is a high strength-to-weight ratio. However, this stength is highly directional. Carbon fibres are resistant to stretching, and resins to compression, but neither are resistant to bending. This can be determined through testing, but such tests slow down the development of novel composites.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
-<p><img src="Offgrid_source.png" class="img-fluid"></p>
-</div></div></main> <!-- /main -->
+<p><img src="fibre_diagram.png" class="img-fluid"></p>
+</div></div><p>To predict the bending stength of composites, we need the mechanical properties of their constituent parts. For carbon fibres, these properties are well-known in the longitudinal direction, but almost completely unknown in the transverse direction. This is because they are extremely small, making testing of an individual fibre difficult. In this project, colleagues developed a technique for measuring the miniscule transverse deformations of fibres under loading. To convert these deformations into material properties, I developed analytical and finite-element models of the deformation process.</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

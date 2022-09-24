@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Elliott Wise, PhD - Measuring corrosion damage in metal pipes</title>
+<title>Elliott Wise, PhD - Adapting computational meshes to shock waves</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Measuring corrosion damage in metal pipes</h1>
+      <h1 class="quarto-secondary-nav-title">Adapting computational meshes to shock waves</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -89,12 +89,12 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">Projects</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">About Me</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">About</a>
+  <a href="../projects.html" class="sidebar-item-text sidebar-link">Research Projects</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Measuring corrosion damage in metal pipes</h1>
+<h1 class="title d-none d-lg-block">Adapting computational meshes to shock waves</h1>
 </div>
 
 
@@ -138,15 +138,14 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Metal pipes can be prone to corrosion when water becomes trapped near them. Common examples include the region between an above-ground pipe and its concrete supports, and in buried pipes. If the corrosion is severe enough, then the pipe will leak its contents. This can be extremely problematic from an environmental standpoint. However, it is also very difficult to inspect for corrosion, with many pipes being extremely long and likely corrosion locations often being hidden.</p>
+<p>Shock waves form when high-power sound waves propagate. A well-known example is a sonic boom, caused by aircraft travelling faster than the speed of sound in air. A lesser-known example is in medicine, where high-power ultrasonic waves are used to destroy unhealthy tissue. At the front of a shock wave, the acoustic pressure varies by a large amount over very little space. This is difficult to simulate, as the resolution of the simulation needs to be extremely high over this region. In this project, I developed tools for optimally determining an appropriate distribution of resolution, given limited computational resources. This was based on the local bandwidth of the wave-field, that is on the range of frequencies present at a given point in space.</p>
 
-<div class="no-row-height column-margin column-container"><div class="">
-<p><img src="corrosion_patch.png" class="img-fluid"></p>
-</div></div><p>To perform such inspections ultrasound waves are useful. These can propagate over long distances, and images can be formed from discrepancies between the transmitted and received waves. In this project, I have developed imaging algorithms that can accurately determine not just the location of corrosion, but also its extent. This will allow managers to make informed decisions about when pipes need to be taken out of service and repaired or replaced.</p>
 
 
 
-</main> <!-- /main -->
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="Shock_wave_mesh.png" class="img-fluid"></p>
+</div></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
