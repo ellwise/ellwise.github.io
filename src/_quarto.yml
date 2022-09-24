@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: ../_rendered
+  output-dir: ../docs
 
 website:
   title: "Elliott Wise, PhD"
