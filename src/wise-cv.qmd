@@ -4,6 +4,8 @@ __Website__: [ellwise.com](https://ellwise.com)
 
 {{< include history.qmd >}}
 
+{{< include skills.qmd >}}
+
 ---
 title: Dr Elliott Wise
 format: pdf
