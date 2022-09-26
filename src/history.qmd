@@ -18,6 +18,7 @@ __Senior Advisor__ | Gutteridge, Haskins & Davey (GHD) | 2021--Present
 * Personal focus is on __building a new capability__ in the UK: The use of __dynamic simulation__ for __commercial analysis__ of large-scale infrastructure.
 * Projects/clients have included:
     * __City of Toronto__: Development of a __techno-economic model__ of a proposed __renewable natural gas__ facility, capturing both the physical dynamics of the system and subsequent commercial performance. This is helping engineers to undertake __optioneering__ and provide financially justified technical advice.
+    * __Central Government__: Development of a __dynamic simulation__ of border infrastructure and future configurations to inform a capability review against anticipated demand.
     * __Network Rail__: Development of a proof-of-concept __web-app__ to identify and communicate insights from network planning data. This helps users understand factors that have led to historical underperformance, and flags risks within upcoming work.
     * __National Highways__: Investigation into the factors holding back adoption of a new __enterprise data tool__. This included __conducting interviews__ with users, building out __training materials__, and __delivering workshops__.
 
@@ -55,6 +56,4 @@ __Mathematician__ | Commonwealth Scientific & Industrial Research Organisation |
 __Consultant__ | Eggler Consulting Engineers | 2010--2012
 
 * Eggler Consulting Engineers provides __systems engineering__ management for military vehicle projects, as well as related __teaching services__ to both industry and academia.
-* Worked as a consultant to __Rheinmetall MAN Military Vehicles__ on a response to a Defence tender for a fleet of modular logistics vehicles.
-* __Prepared teaching material__ on vehicle design for the Australian Defence Force Academy.
-* Administrated and created website content on military vehicle history.
+* Worked as a consultant to __Rheinmetall MAN Military Vehicles__ on a response to a Defence tender for a fleet of modular logistics vehicles, and __prepared teaching materials__ for the Australian Defence Force Academy.
