@@ -2,3 +2,4 @@ title: Elliott Wise, PhD
 description: Elliott Wise's personal site
 baseurl: ""
 url: "https://ellwise.github.io"
+theme: minima
