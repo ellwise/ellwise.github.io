@@ -1,0 +1,16 @@
+__Email__: [ell.wise@gmail.com](mailto:ell.wise@gmail.com)  
+__GitHub__: [github.com/ellwise](https://github.com/ellwise)  
+__Website__: [ellwise.com](https://ellwise.com)
+
+{% include history.md %}
+
+{% include skills.md %}
+
+---
+title: Dr Elliott Wise
+format: pdf
+documentclass: article
+geometry:
+  - margin=20mm
+mainfont: Baskervald ADF Std
+---

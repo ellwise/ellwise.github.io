@@ -1,0 +1,12 @@
+---
+title: "Extracting lactoferrin from milk whey"
+image: "BLf_protein.png"
+---
+
+Lactoferrin is a protein that is found in milk. It can be used as a nutritional supplement in baby formula, as it has anti-microbial properties. This project developed a technology for efficiently extracting lactoferrin from milk whey. It works using stimuli-responsive polymer balls. When heated, polymer hairs on the surface of the balls extend into the milk whey, binding with the protein. The milk whey can then be washed away, and the temperature brought down again. As the temperature drops, the hairs retract and release the protein.
+
+:::{.column-margin}
+![](assets/images/BLf_protein.png)
+:::
+
+To design these polymers, two types of molecular dynamics simulations were used. First, the heat treatment process was simulated for the lactoferrin protein. This showed that certain binding sites became accessible when the protein was heated. Second, the interactions between these binding sites and a large number of polymers were simulated. Candidate polymers were then able to be tested in the lab so that the most effective could be used in the final product.

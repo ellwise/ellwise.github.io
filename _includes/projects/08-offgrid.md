@@ -1,0 +1,10 @@
+---
+title: "Embedding sources in ultrasound simulations"
+image: "Offgrid_source.png"
+---
+
+To simulate ultrasound waves, regular computational grids are often used. This is effectively like storing an video as pixels, with each pixel giving the acoustic field at a given point in space and time. However, acoustic sources often don't lend themselves well to pixellation. For instance, the edges of a bowl-shaped transducer become staircased when represented on a grid. To combat this, I developed a technique for accurately representing a single point source at a location that is not aligned with the grid. This works by spreading the point source across many nearby pixels in an optimal manner. Arbitrary source distributions can then be accurately represented as collections of off-grid point sources.
+
+:::{.column-margin}
+![](assets/images/Offgrid_source.png)
+:::

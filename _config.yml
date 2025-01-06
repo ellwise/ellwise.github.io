@@ -1,0 +1,24 @@
+website:
+  title: "Elliott Wise, PhD"
+  sidebar:
+    background: primary
+    contents:
+      - index.qmd
+      - projects.qmd
+      - href: wise-cv.qmd
+        text: Download CV
+      - href: https://github.com/ellwise/
+        text: GitHub Profile
+      - href: https://scholar.google.co.uk/citations?user=5LE79rcAAAAJ&hl=en
+        text: Google Scholar
+    search: false
+    style: docked
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+
+
