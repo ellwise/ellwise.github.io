@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What happened to AfterEllen.com?"
+title: "Research: What happened to AfterEllen.com?"
 image: /assets/images/AfterEllen.jpg
 ---
 
