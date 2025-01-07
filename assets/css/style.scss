@@ -3,14 +3,20 @@
 
 @import "{{ site.theme }}";
 
-small {
+@media print {
+    header {
+      display: none;
+    }
+}
+
+footer {
     display: none;
 }
 
 .responsive-container {
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 75px;
     overflow: hidden;
     margin-bottom: 10px;
     border: thin solid;
@@ -33,5 +39,13 @@ small {
     position: absolute;
     top: 10px;
     left: 10px;
-    text-shadow: 1px 1px 1px white, -1px 1px 1px white, 1px -1px 1px white, -1px -1px 1px white;
+    text-shadow:
+        0px 1px 1px white,
+        1px 1px 1px white,
+        1px 0px 1px white,
+        1px -1px 1px white,
+        0px -1px 1px white,
+        -1px -1px 1px white,
+        -1px 0px 1px white,
+        -1px 1px 1px white;
 }
