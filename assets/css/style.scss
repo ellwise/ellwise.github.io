@@ -3,13 +3,14 @@
 
 @import "{{ site.theme }}";
 
-.card-img {
+.responsive-img {
     transition: all 0.5s ease-in-out;
     object-fit: cover;
     object-position: top;
-    height: 100%;
+    height: 150px;
+    width: 100%;
 }
 
-.card-img:hover {
+.responsive-img:hover {
     object-position: bottom;
 }
