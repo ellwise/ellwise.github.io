@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python development: Dash Compose"
-image: assets/images/python-logo-only.svg
+image: assets/images/python-logo-generic.svg
 ---
 
 Dash Compose provides a tidier way of composing Plotly Dash layouts.

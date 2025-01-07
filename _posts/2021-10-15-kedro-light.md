@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python development: Kedro Light"
-image: assets/images/python-logo-only.svg
+image: assets/images/python-logo-generic.svg
 ---
 
 Kedro Light provides a minimal interface to Kedro and Kedro-Viz.
