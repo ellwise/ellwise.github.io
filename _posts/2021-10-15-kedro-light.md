@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python package: Kedro Light"
+title: "Python development: Kedro Light"
 image: assets/images/python-logo-only.svg
 ---
 

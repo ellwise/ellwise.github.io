@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python package: Dash Compose"
+title: "Python development: Dash Compose"
 image: assets/images/python-logo-only.svg
 ---
 
