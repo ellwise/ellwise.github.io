@@ -7,14 +7,10 @@ layout: default
     {% for post in site.posts %}
     <div>
         <a href="{{ post.url }}">
-            <div class="card h-100 card-left">
-                <p class="card-img-top">
-                    <img src="{{ post.image }}" class="card-img" style="height: 150px;">
-                </p>
-                <div class="card-body post-contents">
-                    <h5>{{ post.title }}</h5>
-                </div>
-            </div>
+            <p class="card-img-top">
+                <img src="{{ post.image }}" class="card-img" style="height: 150px;">
+            </p>
+            <h5>{{ post.title }}</h5>
         </a>
     </div>
     {% endfor %}
