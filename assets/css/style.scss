@@ -27,9 +27,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Adjust for true centering */
-    color: black;
     text-shadow: 2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
 }
