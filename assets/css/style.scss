@@ -9,7 +9,8 @@
     height: 150px;
     overflow: hidden;
     margin-bottom: 10px;
-    border: thick;
+    border: thin solid;
+    border-radius: 3px;
 }
   
 .responsive-container img {
@@ -26,8 +27,7 @@
   
 .overlay-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Adjust for true centering */
-    text-shadow: 2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white;
+    top: 10px;
+    left: 10px;
+    text-shadow: 3px 3px 0 white, -3px 3px 0 white, 3px -3px 0 white, -3px -3px 0 white;
 }
