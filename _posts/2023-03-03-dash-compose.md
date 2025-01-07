@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Python package: Dash Compose"
+image: assets/images/gthub-mark.svg
 ---
 
 Dash Compose provides a tidier way of composing Plotly Dash layouts.

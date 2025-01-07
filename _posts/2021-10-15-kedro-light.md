@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Python package: Kedro Light"
+image: assets/images/gthub-mark.svg
 ---
 
 Kedro Light provides a minimal interface to Kedro and Kedro-Viz.
