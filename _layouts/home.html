@@ -5,10 +5,10 @@ layout: default
 <section>
     {{ content }}
     {% for post in site.posts %}
-    <div>
+    <div class="responsive-container">
         <a href="{{ post.url }}">
             <img src="{{ post.image }}" class="responsive-img">
-            <h5>{{ post.title }}</h5>
+            <h5 class="overlay-text">{{ post.title }}</h5>
         </a>
     </div>
     {% endfor %}
