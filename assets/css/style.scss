@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+small {
+    display: none;
+}
+
 .responsive-container {
     position: relative;
     width: 100%;
