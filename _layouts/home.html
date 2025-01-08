@@ -3,9 +3,10 @@ layout: default
 ---
 
 {{ content }}
+
 {% for post in site.posts %}
 <div class="responsive-container">
-    <a href="{{ post.url }}">
+    <a href="{{ post.href | default: post.url }}">
         <img src="{{ post.image }}">
         <h5 class="overlay-text">{{ post.title }}</h5>
     </a>
