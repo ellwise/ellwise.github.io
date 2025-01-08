@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Topic modelling: What happened to AfterEllen.com?"
-image: /assets/images/AfterEllen.jpg
+image: https://afterellen.com/wp-content/uploads/2020/12/logo_ae.png
 ---
 
 Between my undergraduate and post-graduate studies, I undertook an independent research project in collaboration with a gender studies scholar, aiming to leverage my data science skills alongside her subject-matter expertise. This project examined the history and evolution of a website called AfterEllen.
