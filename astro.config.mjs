@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://wiseideas.au",
+  site: "https://ellwise.github.io",
   build: {
     format: "file",
   },
