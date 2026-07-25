@@ -1,8 +1,10 @@
 ---
-layout: post
 title: "Protein binding, carbon fibre characterisation, and ion thruster design"
-image: /assets/images/BLf_protein.png
+description: "How do you bind proteins with temperature-responsive polymers? Can we directly test transverse mechanical properties of individual carbon fibres? What should we build ion thrusters from?"
+date: 2013-01-01
 ---
+
+# Commonwealth Scientific and Industrial Research organisation
 
 Following my undergraduate studies, I joined the Mathematics of Materials research group at the Commonwealth Scientific and Industrial Research Organisation. I undertook three research projects at this time focussing on problems in materials science.
 
@@ -10,7 +12,7 @@ Following my undergraduate studies, I joined the Mathematics of Materials resear
 
 Lactoferrin is a protein that is found in milk. It can be used as a nutritional supplement in baby formula, as it has anti-microbial properties. This project developed a technology for efficiently extracting lactoferrin from milk whey. It works using stimuli-responsive polymer balls. When heated, polymer hairs on the surface of the balls extend into the milk whey, binding with the protein. The milk whey can then be washed away, and the temperature brought down again. As the temperature drops, the hairs retract and release the protein.
 
-![Visualisation of a bovine lactoferrin protein](/assets/images/BLf_protein.png)
+![Visualisation of a bovine lactoferrin protein](/images/BLf_protein.png)
 
 To design these polymers, two types of molecular dynamics simulations were used. First, the heat treatment process was simulated for the lactoferrin protein. This showed that certain binding sites became accessible when the protein was heated. Second, the interactions between these binding sites and a large number of polymers were simulated. Candidate polymers were then able to be tested in the lab so that the most effective could be used in the final product.
 
@@ -18,7 +20,7 @@ To design these polymers, two types of molecular dynamics simulations were used.
 
 Carbon fibre composites are widely used in the aerospace industry. These consist of a woven mat of fibres embedded in a resin. Their chief benefit over traditional materials is a high strength-to-weight ratio. However, this stength is highly directional. Carbon fibres are resistant to stretching, and resins to compression, but neither are resistant to bending. This can be determined through testing, but such tests slow down the development of novel composites.
 
-![Transverse schematic of a carbon fibre under compression](/assets/images/fibre_diagram.png)
+![Transverse schematic of a carbon fibre under compression](/images/fibre_diagram.png)
 
 To predict the bending stength of composites, we need the mechanical properties of their constituent parts. For carbon fibres, these properties are well-known in the longitudinal direction, but almost completely unknown in the transverse direction. This is because they are extremely small, making testing of an individual fibre difficult. In this project, colleagues developed a technique for measuring the miniscule transverse deformations of fibres under loading. To convert these deformations into material properties, I developed analytical and finite-element models of the deformation process.
 
@@ -26,6 +28,6 @@ To predict the bending stength of composites, we need the mechanical properties 
 
 Ion thrusters are a form of spacecraft propulsion. They were notably used on the Deep Space 1 and Dawn spacecraft, but their main use is on satellites. This is because of their unrivalled fuel efficiency, providing decades of use with very little propellant mass.
 
-![Animation of metallic ions sputtering from a surface](/assets/images/ion_thruster_sputtering.gif)
+![Animation of metallic ions sputtering from a surface](/images/ion_thruster_sputtering.gif)
 
 Ion thrusters work by accelerating very small amounts of ionised gas up to extremely high velocities. However, these high-velocity particles cause damage to the thruster's components, and eventually flaking metal causes short circuits. These can cause the thruster to fail long before the propellant runs out. To combat this, I performed simulations of ion collisions with many different metallic crystals. This allows ion thruster designers to more wisely choose materials for their thruster components.

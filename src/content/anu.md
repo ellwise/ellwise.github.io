@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "Hydrologic modelling and ultrasound simulation"
-image: /assets/images/axisymmetric_ultrasound.png
+description: "Can catchment models be transferred to regions with no training data? How do we leverage symmetry to make ultrasound simulation cheaper?"
+date: 2007-06-01
 ---
 
-During my undergraduate studies at the Australian National University I enjoyed undertaking research projects, first as part of a Summer Scholarshp programme with the Mathematical Sciences Institute and following that for my Engineering Honours year.
+# Australian National University
+
+During my undergraduate studies I undertook research projects, first as part of a Summer Scholarship with the Mathematical Sciences Institute and then for my Engineering Honours year.
 
 ## Watershed modelling in data-sparse regions
 
@@ -15,5 +17,7 @@ To apply models to catchments that lack this data, we can use regionalisation. T
 ## Axisymmetric ultrasound simulation
 
 Ultrasound plays an important role in medicine, with uses including imaging, drug delivery, and cancer therapy. This last application works by focussing high-power ultrasound waves onto a tumour, causing highly localised heating. Simulations are used to ensure that the sound waves focus as intended, and to determine the appropriate level of power that is applied. However, the high frequencies involved can make simulation prohibitively computationally expensive.
+
+![Visualisation of axisymmetric ultrasound simulation](/images/axisymmetric_ultrasound.png)
 
 One way of mitigating these expenses is to exploit symmetry. Often, the ultrasound transducers are shaped like spherical bowls. The sound waves then have the same symmetry, and this can be exploited in the simulation, reducing a three-dimensional problem down to two-dimensions. To do so, discrete sine and cosine transforms are used. These represent the acoustic field in a using functions with certain symmetry properties.This brings computational costs down dramatically.

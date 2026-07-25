@@ -1,19 +1,21 @@
 ---
-layout: post
-title: "More ultrasound: Improving numerical methods for simulation"
-image: /assets/images/Shock_wave_mesh.png
+title: "More ultrasound: Improving numerical methods"
+description: "Where should physics simulations spend their resolution budget? How do you place source terms that don't align with the computational mesh?"
+date: 2014-09-01
 ---
 
-After my time at the Commonwealth Scientific and Industrial Research Organisation, I packed my bags and left Australia to take up a PhD at University College London within the Medical Physics department. Here I rekindled my interest in ultrasound and continued on from the research I undertook as an undergraduate.
+# University College London
+
+After my time at the Commonwealth Scientific and Industrial Research Organisation, I left Australia to take up a PhD at University College London within the Medical Physics and Biomedical Engineering department. Here I rekindled my interest in ultrasound and continued on from the research I undertook as an undergraduate.
 
 ## Adapting computational meshes to shock waves
 
 Shock waves form when high-power sound waves propagate. A well-known example is a sonic boom, caused by aircraft travelling faster than the speed of sound in air. A lesser-known example is in medicine, where high-power ultrasonic waves are used to destroy unhealthy tissue. At the front of a shock wave, the acoustic pressure varies by a large amount over very little space. This is difficult to simulate, as the resolution of the simulation needs to be extremely high over this region. In this project, I developed tools for optimally determining an appropriate distribution of resolution, given limited computational resources. This was based on the local bandwidth of the wave-field, that is on the range of frequencies present at a given point in space.
 
-![Visualisation of a computational mesh conformed to a shock wave](/assets/images/Shock_wave_mesh.png)
+![Visualisation of a computational mesh conformed to a shock wave](/images/Shock_wave_mesh.png)
 
 ## Embedding sources in ultrasound simulations
 
 To simulate ultrasound waves, regular computational grids are often used. This is effectively like storing an video as pixels, with each pixel giving the acoustic field at a given point in space and time. However, acoustic sources often don't lend themselves well to pixellation. For instance, the edges of a bowl-shaped transducer become staircased when represented on a grid. To combat this, I developed a technique for accurately representing a single point source at a location that is not aligned with the grid. This works by spreading the point source across many nearby pixels in an optimal manner. Arbitrary source distributions can then be accurately represented as collections of off-grid point sources.
 
-![Visualisation of off-grid sample locations for an ultrasound source](/assets/images/Offgrid_source.png)
+![Visualisation of off-grid sample locations for an ultrasound source](/images/Offgrid_source.png)
